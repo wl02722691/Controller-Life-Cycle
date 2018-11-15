@@ -8,34 +8,50 @@ Controller Life Cycle
 1. viewWillDisappear
 1. viewDidDisappear
 
-> 兩個VC切換，button show:
+> 兩個VC切換，button show(push):
 
-1. viewDidLoad1
-1. viewWillAppear1
-1. viewDidAppear1
-1. viewDidLoad2
-1. viewWillDisappear1
-1. viewWillAppear2
-1. viewDidAppear2
-1. viewDidDisappear1
+viewDidLoad1
+viewWillAppear1
+viewDidAppear1
 
->VC1button show到 VC2back:
+(按按鈕)
+viewDidLoad2
+viewWillDisappear1
+viewWillAppear2
+viewDidAppear2
+viewDidDisappear1
 
-1. viewDidLoad1
-1. viewWillAppear1
-1. viewDidAppear1
-1. viewDidLoad2
-1. viewWillDisappear1
-1. viewWillAppear2
-1. viewDidDisappear1
-1. viewDidAppear2
+>Navigation :VC1 > VC2 + useback >VC1
+
+viewDidLoad1
+viewWillAppear1
+viewDidAppear1
+
+(按button)
+viewDidLoad2
+viewWillDisappear1
+viewWillAppear2
+viewDidDisappear1
+viewDidAppear2
+
+(按back)
+viewWillDisappear2
+viewWillAppear1
+viewDidDisappear2
+viewDidAppear1
+
+
 
 > 切換tabbar:
-1. viewDidLoad1
-1. viewWillAppear1
-1. viewDidAppear1
-1. viewDidLoad2
-1. viewWillAppear2
-1. viewWillDisappear1
-1. viewDidDisappear1
-1. viewDidAppear2
+
+viewDidLoad1
+viewWillAppear1
+viewDidAppear1
+
+(切tab)
+viewDidLoad2
+viewWillAppear2
+viewWillDisappear1
+viewDidDisappear1
+viewDidAppear2
+
