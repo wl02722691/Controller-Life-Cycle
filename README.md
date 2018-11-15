@@ -3,9 +3,10 @@ Controller Life Cycle
 
 >單一Controller
 1. viewdidload
-1. viewWillApear
-1. viewDidApear
-1. viewWillDisp
+1. viewWillAppear
+1. viewDidAppear
+1. viewWillDisappear
+1. viewDidDisappear
 
 > 兩個VC切換，button show:
 
